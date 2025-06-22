@@ -57,3 +57,25 @@ var x = setInterval(function () {
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
+<<<<<<< HEAD
+=======
+
+// Mobile menu toggle
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navbarLinks = document.querySelector('.navbar-links');
+    
+    if (menuToggle && navbarLinks) {
+        menuToggle.addEventListener('click', function() {
+            navbarLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!navbarLinks.contains(event.target) && !menuToggle.contains(event.target)) {
+                navbarLinks.classList.remove('active');
+            }
+        });
+    }
+});
+>>>>>>> 379f5f299a860ee188610b8c6dbacfdb88e8bbe9
