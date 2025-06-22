@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Run photon_center locally",
+			"command": "python3 -m http.server 8000",
+			"args": [],
+			"isBackground": true,
+			"group": "build"
+		}
+	]
+}
